@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" >
+        <script src="classes.js"></script>
+        <script src="code.js"></script>
+    </head>
+    <body>
+        <header>
+            <h3>School Manager</h3>
+            <h4><em>Bringing academia to the 21st century!</em></h4>
+        </header>
+        <div id="wrapper">
+            <h1>School Manager</h1>
+            <div id="people_list_container">
+                <div id="tabs">
+                    <div class="tab" id="teacher_tab" onclick="changeTab(event)">Teachers</div>
+                    <div class="tab" id="student_tab" onclick="changeTab(event)">Students</div>
+                    <div class="tab" id="administrator_tab" onclick="changeTab(event)">Administrators</div>
+                </div>
+                <div id="teacher_list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Age</th>
+                                <th>Gender</th>
+                                <th>Subjects</th>
+                                <th>Years Service</th>
+                            </tr>
+                        </thead>
+                        <tbody id="teacher_table_tbody">
+                            <tr>
+                                <td>Bob</td>
+                                <td>Smith</td>
+                                <td>34</td>
+                                <td>M</td>
+                                <td>Economics</td>
+                                <td>12</td>    
+                            </tr>
+                            <tr>
+                                <td>Susan</td>
+                                <td>Carson</td>
+                                <td>42</td>
+                                <td>F</td>
+                                <td>Engineering</td>
+                                <td>18</td>    
+                            </tr>
+                            <tr>
+                                <td>Tim</td>
+                                <td>Matthews</td>
+                                <td>54</td>
+                                <td>M</td>
+                                <td>Statistics</td>
+                                <td>21</td>    
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3 class="add-message">Add Teacher</h3>
+                    <form id="teacher_form" onsubmit="return false;">
+                        <label for="fname">First name:</label>
+                        <input id="fname" name="fname" type="text" placeholder="enter first name" /><br><br>
+                        <label for="lname">Last name:</label>
+                        <input id="lname" name="lname" type="text" placeholder="enter last name" /><br><br>
+                        <label for="age">Age:</label>
+                        <input id="age" name="age" type="text" placeholder="enter age" /><br><br>
+                        <label for="gender">Gender:</label>
+                        <input id="gender" name="gender" type="text" placeholder="enter gender" /><br><br>
+                        <label for="subject">Subject:</label>
+                        <input id="subject" name="subject" type="text" placeholder="enter subject" /><br><br>
+                        <label for="years">Years service:</label>
+                        <input id="years" name="years" type="text" placeholder="enter years service" /><br><br>
+                        <div><button onclick="add('teacher')">Add</button></div>
+                    </form>
+                </div>
+                <div id="student_list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Age</th>
+                                <th>Gender</th>
+                                <th>Classes</th>
+                            </tr>
+                        </thead>
+                        <tbody id="student_table_tbody">
+                            <tr>
+                                <td>Pablo</td>
+                                <td>Fernandez</td>
+                                <td>18</td>
+                                <td>M</td>
+                                <td>Economics, Statistics</td>
+                            </tr>
+                            <tr>
+                                <td>Kristi</td>
+                                <td>Vasquez</td>
+                                <td>19</td>
+                                <td>F</td>
+                                <td>Engineering, Calculus</td>
+                            </tr>
+                            <tr>
+                                <td>Samuel</td>
+                                <td>Roberts</td>
+                                <td>24</td>
+                                <td>M</td>
+                                <td>French, Statistics, Accounting</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3 class="add-message">Add Student</h3>
+                    <form id="student_form" onsubmit="return false;">
+                        <label for="fname">First name:</label>
+                        <input id="fname" name="fname" type="text" placeholder="enter first name" /><br><br>
+                        <label for="lname">Last name:</label>
+                        <input id="lname" name="lname" type="text" placeholder="enter last name" /><br><br>
+                        <label for="age">Age:</label>
+                        <input id="age" name="age" type="text" placeholder="enter age" /><br><br>
+                        <label for="gender">Gender:</label>
+                        <input id="gender" name="gender" type="text" placeholder="enter gender" /><br><br>
+                        <label for="classes">Classes:</label>
+                        <input id="classes" name="classes" type="text" placeholder="enter classes" /><br><br>
+                        <div><button onclick="add('student')">Add</button></div>
+                    </form>
+                </div>
+                <div id="administrator_list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Age</th>
+                                <th>Gender</th>
+                                <th>Department</th>
+                                <th>Years Service</th>
+                            </tr>
+                        </thead>
+                        <tbody id="administrator_table_tbody">
+                            <tr>
+                                <td>Ralph</td>
+                                <td>Tanaka</td>
+                                <td>43</td>
+                                <td>M</td>
+                                <td>Finance</td>
+                                <td>22</td>    
+                            </tr>
+                            <tr>
+                                <td>Wendy</td>
+                                <td>Wang</td>
+                                <td>31</td>
+                                <td>F</td>
+                                <td>Human Resources</td>
+                                <td>6</td>    
+                            </tr>
+                            <tr>
+                                <td>Sue</td>
+                                <td>Park</td>
+                                <td>49</td>
+                                <td>F</td>
+                                <td>Security</td>
+                                <td>16</td>    
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3 class="add-message">Add Administrator</h3>
+                    <form id="administrator_form" onsubmit="return false;">
+                        <label for="fname">First name:</label>
+                        <input id="fname" name="fname" type="text" placeholder="enter first name" /><br><br>
+                        <label for="lname">Last name:</label>
+                        <input id="lname" name="lname" type="text" placeholder="enter last name" /><br><br>
+                        <label for="age">Age:</label>
+                        <input id="age" name="age" type="text" placeholder="enter age" /><br><br>
+                        <label for="gender">Gender:</label>
+                        <input id="gender" name="gender" type="text" placeholder="enter gender" /><br><br>
+                        <label for="department">Department:</label>
+                        <input id="department" name="department" type="text" placeholder="enter department" /><br><br>
+                        <label for="years">Years service:</label>
+                        <input id="years" name="years" type="text" placeholder="enter years service" /><br><br>
+                        <div><button onclick="add('administrator')">Add</button></div>
+                    </form>                    
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h5>Copyright &copy; 2021 School Manager, Inc. All rights reserved.</h5>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="code.js"></script>
+    </head>
+    <body>
+        <h1>Welcome to Ultimate Pizza!</h1>
+        <h4>Order pizzas:</h4>
+        <form>
+            <label for="small">small (14.00)</label>
+            <input type="number" id="small" name="small_pizza" />
+            <br>
+            <label for="medium">medium (18.00)</label>
+            <input type="number" id="medium" name="medium_pizza" />
+            <br>
+            <label for="large">large (22.00)</label>
+            <input type="number" id="large" name="large_pizza" />
+            <br>
+            <input 
+                type="button" 
+                id="calculate" 
+                value="Calculate" 
+                onclick="calculateOrder()" />
+            <p id="discount_message">Get 10% off on any order of 5 or more total pizzas!</p>
+        </form>
+        <div>
+            <label for="total">Total:</label>
+            <input type="number" id="total" name="total" />
+        </div>
+    </body>
+</html>

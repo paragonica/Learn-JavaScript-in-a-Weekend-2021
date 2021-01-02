@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: #455A64;
+}
+header {
+    display: flex;
+    align-items: center;
+    background-color: #00695C;
+    padding: 20px;
+    color: #ECEFF1;
+}
+header h3, header h4 {
+    margin: 0;
+}
+header h4 {
+    font-weight: 400;
+    margin-left: 100px;
+}
+#wrapper {
+    flex: 1;
+}
+h1 {
+    text-align: center;
+    margin-top: 70px;
+}
+#people_list_container {
+    text-align: center;
+}
+#tabs {
+    display: inline-block;
+}
+.tab {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #B2DFDB;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 40px;
+    width: 150px;
+}
+#teacher_tab {
+    background-color: #80CBC4;
+}
+#student_list, #administrator_list {
+    display: none;
+}
+table {
+    margin: auto;
+    border: 1px solid #00695C;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #00695C;
+    padding: 10px;
+}
+th {
+    background-color: #80CBC4;
+}
+footer {
+    background-color: #00695C;
+    text-align: center;
+    color: #ECEFF1;
+}
+h5 {
+    font-weight: 400;
+}
+.add-message {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    color: #00695C;
+}
+form {
+    display: inline-block;
+    text-align: right;
+}
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+    color: #00695C;
+}
+input {
+    width: 300px;
+    font-size: 16px;
+    padding: 5px;
+    color: #00695C;
+}
+button {
+    font-size: 20px;
+    color: #ECEFF1;
+    background-color: #00695C;
+    padding: 5px 15px;
+}
