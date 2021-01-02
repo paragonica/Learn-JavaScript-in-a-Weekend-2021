@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E1F5FE;
+    color: #37474F;
+    text-align: center;    
+}
+h1 {
+    margin-top: 100px;
+}
+#wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    margin: 100px auto;
+}
+#fruit_list {
+    text-align: left;
+    background-color: #B3E5FC;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+#fruits_label {
+    font-weight: 700;
+}
+.fruit {
+    border-bottom: 1px solid #90A4AE;
+    padding: 5px 20px;
+}
+.add {
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 15px;
+}
+.add:hover {
+    color: #039BE5;
+}
+#shopping_cart {
+    visibility: hidden;
+}
+table {
+    color: #ECEFF1;
+    border: 1px solid #01579B;
+    border-collapse: collapse;
+    background-color: #4FC3F7;
+    width: 500px;
+}
+th, td {
+    border: 1px solid #01579B;
+    padding: 10px;
+}
+#total_row, #subtotal_row, #discount_row {
+    background-color: #039BE5;
+}
+#total_label, #subtotal_label, #discount_label {
+    text-align: right;
+}
+#subtotal_row, #discount_row {
+    display: none;
+}
+#total {
+    font-weight: 700;
+}

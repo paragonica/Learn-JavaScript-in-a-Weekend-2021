@@ -1,0 +1,19 @@
+body {
+    padding: 50px;
+}
+form label {
+    display: inline-block;
+    width: 110px;
+    text-align: right;
+    padding-right: 8px;
+}
+form input {
+    margin-bottom: 10px;
+}
+div {
+    margin-top: 30px;
+}
+#discount_message {
+    display: inline;
+    margin-left: 50px;
+}

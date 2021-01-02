@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" >
+        <script src="util.js"></script>
+        <script src="code.js"></script>
+    </head>
+    <body>
+        <h1>Online Fruit Stand</h1>
+        <h3>Welcome! Select from our fine fruits.</h3>
+
+        <h4>10% discount for orders over $30!</h4>
+        <div id="wrapper">
+            <div id="fruit_list">
+                <p id="fruits_label">Today's fruits:</p>
+                <p class="fruit">bananas <span>(.39/lb)</span> <span class="add" onclick="addFruit(this)">+</span></p>
+                <p class="fruit">grapes <span>(.89/lb)</span> <span class="add" onclick="addFruit(this)">+</span></p>
+                <p class="fruit">apples <span>(.48/ea)</span> <span class="add" onclick="addFruit(this)">+</span></p>
+                <p class="fruit">oranges <span>(.55/ea)</span> <span class="add" onclick="addFruit(this)">+</span></p>
+                <p class="fruit">strawberries <span>(2.49/basket)</span> <span class="add" onclick="addFruit(this)">+</span></p>
+                <p class="fruit">blueberries <span>(3.29/basket)</span> <span class="add" onclick="addFruit(this)">+</span></p>
+                <p class="fruit">raspberries <span>(3.49/basket)</span> <span class="add" onclick="addFruit(this)">+</span></p>
+                <p class="fruit">blackberries <span>(2.89/basket)</span> <span class="add" onclick="addFruit(this)">+</span></p>
+            </div>
+            <div id="shopping_cart">
+                <h3>Your Cart</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fruit</th>
+                            <th>Price</th>
+                            <th>Quanity</th>
+                            <th>Total</th>
+                        </tr>    
+                    </thead>
+                    <tbody id="cart_items"></tbody>
+                    <tfoot id="cart_totals">
+                        <tr id="subtotal_row">
+                            <td id="subtotal_label" colspan="3">Subtotal:</td>
+                            <td>$ <span id="subtotal"></span></td>
+                        </tr>
+                        <tr id="discount_row">
+                            <td id="discount_label" colspan="3">Discount:</td>
+                            <td>$ <span id="discount"></span></td>
+                        </tr>
+                        <tr id="total_row">
+                            <td id="total_label" colspan="3">Order total:</td>
+                            <td id="total">$ <span id="total"></span></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
